@@ -21,9 +21,14 @@ struct CliOptions {
   // display progress bar
   bool progress_bar;
 
+  // ask for GPU specs
+  bool gpu_specs;
+
   // cons
   explicit CliOptions(int argc, char** argv);
 
   // print
   friend std::ostream& operator<<(std::ostream& os, const CliOptions& c);
 };
+
+

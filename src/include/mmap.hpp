@@ -5,6 +5,9 @@
 #include <iostream>
 
 struct Mmap {
+  // mmap handle
+  boost::iostreams::mapped_file_source mmap;
+
   // file mapped size
   std::size_t size;
 
@@ -13,4 +16,7 @@ struct Mmap {
 
   // cons
   explicit Mmap(std::string& filepath);
+
+  // dest
+  ~Mmap();
 };

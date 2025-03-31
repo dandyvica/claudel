@@ -1,0 +1,5 @@
+---
+Language: Cpp
+# Use 100 columns for JS.
+ColumnLimit: 120
+IndentWidth: 4
